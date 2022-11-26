@@ -1,11 +1,11 @@
-redplayer1/rp1/BSP/label.class
+redplayer1/rp1/Events/JoinLeaveEventHandler.class
 redplayer1/rp1/Commands/backpack_cmd.class
 redplayer1/rp1/guitools/inventory_event_manager.class
 redplayer1/rp1/Rp1.class
-redplayer1/rp1/Events/JoinLeave.class
 redplayer1/rp1/Commands/TestCmd.class
 redplayer1/rp1/Commands/datatest.class
 redplayer1/rp1/BSP/Backpack.class
 redplayer1/rp1/Commands/dataobject.class
+redplayer1/rp1/Events/BlockBreakEventHandler.class
 redplayer1/rp1/BSP/BoxPlayer.class
 redplayer1/rp1/Configz/ConfMain.class

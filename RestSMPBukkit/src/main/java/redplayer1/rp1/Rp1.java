@@ -8,7 +8,8 @@ import redplayer1.rp1.Commands.TestCmd;
 import redplayer1.rp1.Commands.backpack_cmd;
 import redplayer1.rp1.Commands.datatest;
 import redplayer1.rp1.Configz.ConfMain;
-import redplayer1.rp1.Events.JoinLeave;
+import redplayer1.rp1.Events.BlockBreakHandler;
+import redplayer1.rp1.Events.JoinLeaveEvent;
 
 public final class Rp1 extends JavaPlugin {
 
@@ -24,14 +25,14 @@ public final class Rp1 extends JavaPlugin {
             }
         }
 
-
         //Register commands
-        this.getCommand("test").setExecutor(new TestCmd());
+        this.getCommand("test").setExecutor(new TestCmd(this));
         this.getCommand("datatest").setExecutor(new datatest());
         this.getCommand("backpack").setExecutor(new backpack_cmd());
 
         //Register event listeners
-        getServer().getPluginManager().registerEvents(new JoinLeave(),this);
+        getServer().getPluginManager().registerEvents(new JoinLeaveEvent(),this);
+        getServer().getPluginManager().registerEvents(new BlockBreakHandler(),this);
 
         //Config folder & file creation
         this.saveDefaultConfig();

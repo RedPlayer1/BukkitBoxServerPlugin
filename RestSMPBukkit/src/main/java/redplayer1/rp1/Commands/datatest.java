@@ -24,7 +24,6 @@ public class datatest implements CommandExecutor {
             return true;
         }
         Player p = (Player) sender;
-        if(command.getName().equalsIgnoreCase("datatest")){
             Gson gson = new Gson();
             dataobject object = new dataobject("myname",14,true);
             String result = gson.toJson(object);
@@ -57,8 +56,6 @@ public class datatest implements CommandExecutor {
                 p.sendMessage("File var = null");
             }
             return true;
-        }
 
-        return false;
     }
 }

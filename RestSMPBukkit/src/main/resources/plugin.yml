@@ -15,3 +15,5 @@ commands:
   backpack:
       usage: /backpack <page (wip)>
       description: open an inventory with stored items
+      aliases:
+        - bp
