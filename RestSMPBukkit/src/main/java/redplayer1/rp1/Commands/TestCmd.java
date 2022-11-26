@@ -8,8 +8,13 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.ArmorStand;
 import org.bukkit.entity.FallingBlock;
 import org.bukkit.entity.Player;
+import org.bukkit.plugin.Plugin;
 
 public class TestCmd implements CommandExecutor {
+    Plugin plugin;
+    public TestCmd(Plugin plugin){
+        this.plugin=plugin;
+    }
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if(sender instanceof Player) {

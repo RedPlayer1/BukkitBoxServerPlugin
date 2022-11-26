@@ -1,11 +1,11 @@
 /home/jsh/Desktop/RestSMPBukkit/src/main/java/redplayer1/rp1/Commands/TestCmd.java
 /home/jsh/Desktop/RestSMPBukkit/src/main/java/redplayer1/rp1/Commands/backpack_cmd.java
-/home/jsh/Desktop/RestSMPBukkit/src/main/java/redplayer1/rp1/BSP/label.java
 /home/jsh/Desktop/RestSMPBukkit/src/main/java/redplayer1/rp1/Configz/ConfMain.java
 /home/jsh/Desktop/RestSMPBukkit/src/main/java/redplayer1/rp1/Commands/datatest.java
 /home/jsh/Desktop/RestSMPBukkit/src/main/java/redplayer1/rp1/Commands/dataobject.java
-/home/jsh/Desktop/RestSMPBukkit/src/main/java/redplayer1/rp1/Events/JoinLeave.java
 /home/jsh/Desktop/RestSMPBukkit/src/main/java/redplayer1/rp1/BSP/BoxPlayer.java
+/home/jsh/Desktop/RestSMPBukkit/src/main/java/redplayer1/rp1/Events/JoinLeaveEventHandler.java
+/home/jsh/Desktop/RestSMPBukkit/src/main/java/redplayer1/rp1/Events/BlockBreakEventHandler.java
 /home/jsh/Desktop/RestSMPBukkit/src/main/java/redplayer1/rp1/BSP/Backpack.java
 /home/jsh/Desktop/RestSMPBukkit/src/main/java/redplayer1/rp1/guitools/inventory_event_manager.java
 /home/jsh/Desktop/RestSMPBukkit/src/main/java/redplayer1/rp1/Rp1.java
