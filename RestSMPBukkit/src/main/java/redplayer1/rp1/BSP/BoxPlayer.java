@@ -1,12 +1,16 @@
 package redplayer1.rp1.BSP;
 
+import org.bukkit.Material;
 import org.bukkit.entity.Player;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class BoxPlayer {
     static Map<String,BoxPlayer> playerMap = new HashMap<>();
+    static final List<Material> minableBlocks = Arrays.asList(
+            Material.OAK_LOG,
+            Material.COBBLESTONE
+    );
     Player player;
     Backpack backpack;
 
@@ -18,7 +22,12 @@ public class BoxPlayer {
         this.player = player;
         this.backpack = backpack;
     }
-    public static void registerPlayer(String uuid,BoxPlayer bp){
+
+    public static List<Material> getMinableBlocks() {
+        return minableBlocks;
+    }
+
+    public static void registerPlayer(String uuid, BoxPlayer bp){
         playerMap.put(uuid, bp);
     }
     public static void registerPlayer(Player player){
@@ -27,7 +36,7 @@ public class BoxPlayer {
     public static void unregisterPlayer(String uuid){
         playerMap.remove(uuid);
     }
-    public BoxPlayer getBoxPlayer(Player p){
+    public static BoxPlayer getBoxPlayer(Player p){
         return playerMap.get(p.getUniqueId().toString());
     }
     public static BoxPlayer getBoxPlayer(String uuid){

@@ -14,15 +14,12 @@ public class backpack_cmd implements CommandExecutor {
             return false;
         }
         Player p = (Player) sender;
-        if(command.getName().equalsIgnoreCase("backpack")) {
             Inventory inv = Bukkit.createInventory(p, 54,"Backpack");
             BoxPlayer bp = BoxPlayer.getBoxPlayer(p.getUniqueId().toString());
 
             inv.setContents(bp.getBackpack().getContentsAsItem());
             p.openInventory(inv);
-            p.sendMessage(bp.getBackpack().getContents().toString());
             return true;
-        }
-        return false;
+
     }
 }
