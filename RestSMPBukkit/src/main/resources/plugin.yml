@@ -1,0 +1,17 @@
+name: Rp1
+version: '${project.version}'
+main: redplayer1.rp1.Rp1
+api-version: 1.19
+prefix: RSMPP
+authors: [ RedPlayer_1 ]
+description: Plugin for the RelaxSMP
+commands:
+  test:
+    usage: /test
+    description: test command
+  datatest:
+    usage: /datatest
+    description: data testing command w/ gson library
+  backpack:
+      usage: /backpack <page (wip)>
+      description: open an inventory with stored items
